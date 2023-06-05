@@ -1,8 +1,6 @@
-module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
-  bucket = "my-s3-bucket"
-  acl    = "private"
+module "s3-bucket" {
+  source  = "app.terraform.io/blaze-clan/s3-bucket/aws"
+  version = "2.8.0"
   bucket_prefix= "avanis"
 
 
